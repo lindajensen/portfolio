@@ -1,0 +1,433 @@
+:root {
+  --background-dark: #000;
+  --background-light: #faf9f6;
+  --accent-color: #febf01;
+  --primary-button-color: #3a2273;
+  --light-font-color: #faf9f6;
+  --dark-font-color: #333;
+
+  --heading-font: "Karla", sans-serif;
+  --body-font: "Work Sans", sans-serif;
+
+  --h1-fontsize-mobile: 1.8rem;
+  --h2-fontsize-mobile: 1.6rem;
+  --h3-fontsize-mobile: 1.3rem;
+  --p-fontsize-mobile: 0.8rem;
+
+  --h1-fontsize-desktop: 2.25rem;
+  --h2-fontsize-desktop: 1.75rem;
+  --h3-fontsize-desktop: 1.5rem;
+  --p-fontsize-desktop: 0.9rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--body-font);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-light);
+}
+
+.navlinks li a {
+  color: var(--light-font-color);
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: var(--h1-fontsize-mobile);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: var(--h2-fontsize-mobile);
+}
+
+h3 {
+  font-size: var(--h3-fontsize-mobile);
+}
+
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: var(--p-fontsize-mobile);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+a {
+  font-size: var(--p-fontsize-mobile);
+  text-decoration: none;
+}
+
+span {
+  font-weight: bolder;
+  display: block;
+}
+
+.container {
+  padding: 1.2rem 1.2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.light-font {
+  color: var(--light-font-color);
+}
+
+.dark-font {
+  color: var(--dark-font-color);
+}
+
+.resume-btn {
+  background-color: var(--primary-button-color);
+  color: var(--light-font-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 70%;
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.resume-btn:hover {
+  background-color: #2f1a5c;
+}
+
+.live-btn {
+  background-color: var(--accent-color);
+  color: var(--dark-font-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 70%;
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.live-btn:not(:disabled):hover {
+  background-color: #e0a600;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* HEADER */
+header {
+  background-color: var(--background-dark);
+  width: 100%;
+  height: 50px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+/* HERO */
+.hero {
+  background-color: var(--background-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.headshot {
+  border-radius: 50%;
+  margin-top: 1.8rem;
+  width: 180px;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.hero-content h1 {
+  margin-bottom: 0.8rem;
+}
+
+.hero-content p {
+  padding: 0 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+/* ABOUT */
+.resume {
+  color: var(--primary-button-color);
+  text-decoration: underline;
+}
+
+.about {
+  max-width: 900px;
+}
+
+.about p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.circle {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circleHTML {
+  height: 5.2rem;
+  width: 5.2rem;
+  top: 5%;
+  left: 10%;
+}
+
+.circleCSS {
+  height: 5.1rem;
+  width: 5.1rem;
+  top: 70%;
+  left: 72%;
+}
+
+.circleJS {
+  height: 4.3rem;
+  width: 4.3rem;
+  top: 25%;
+  left: 45%;
+}
+
+.circleTS {
+  height: 3.9rem;
+  width: 3.9rem;
+  top: 80%;
+  left: 10%;
+}
+
+.circleUXUI {
+  height: 3.8rem;
+  width: 3.8rem;
+  top: 45%;
+  left: 20%;
+}
+
+.circleGit {
+  height: 3.8rem;
+  width: 3.8rem;
+  top: 10%;
+  left: 72%;
+}
+
+/* PROJECTS */
+.projects {
+  background-color: var(--background-dark);
+  padding: 1.2rem 1.2rem 3rem 1.2rem;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+  margin-bottom: 1.2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  text-align: center;
+}
+
+.project p {
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* Footer */
+address {
+  font-style: normal;
+  font-size: 80%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (min-width: 500px) {
+  .container {
+    padding: 1.2rem 3rem;
+  }
+
+  .navlinks {
+    justify-content: flex-end;
+    padding-right: 1.8rem;
+    gap: 2rem;
+  }
+
+  .hero {
+    padding-bottom: 3rem;
+  }
+
+  .hero-content p {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--h1-fontsize-desktop);
+  }
+
+  h2 {
+    font-size: var(--h2-fontsize-desktop);
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: var(--h3-fontsize-desktop);
+  }
+
+  p,
+  a {
+    font-size: var(--p-fontsize-desktop);
+  }
+
+  .about p {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto; /* Justera höjden om du vill */
+    position: relative;
+    margin-bottom: 1.8rem;
+  }
+
+  .circle {
+    position: static;
+    margin: 0 1rem;
+  }
+
+  .projects {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .projects h2 {
+    margin-bottom: 1.8rem;
+  }
+
+  .project-section {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 970px) {
+  span {
+    display: inline;
+  }
+
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .about {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .projects {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-section {
+    gap: 4rem;
+  }
+  .contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

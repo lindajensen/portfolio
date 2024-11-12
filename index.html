@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Linda Jensen | Home</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <ul class="navlinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="img">
+          <img
+            class="headshot"
+            src="img/portrait.png"
+            alt="Headshot Linda Jensen"
+          />
+        </div>
+        <div class="hero-content">
+          <h1 class="light-font">Hello, I'm <span>Linda</span></h1>
+          <p class="light-font">
+            Tech-loving teacher that's trying to trade in her whiteboard for a
+            keyboard
+          </p>
+          <a
+            class="resume-btn"
+            href="resume.pdf"
+            download="Linda Jensen - Resume"
+            >Download Resume</a
+          >
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="container about">
+        <h2 id="about">About <span>& Skills</span></h2>
+        <p>
+          Highly motivated Frontend Developer student in the midst of a career
+          jump. Even though I haven't worked in the field yet I'm hoping to
+          bring my creative mindset and problem-solving skills into the world of
+          coding. I'm committed to continuous learning and growth and can't wait
+          to apply everything I've learned in a professional setting. Based in
+          Varberg, Sweden. To learn more about my education and work history,
+          check out my
+          <a class="resume" href="resume.pdf" target="_blank">resume</a>. Thanks
+          for stopping by!
+        </p>
+
+        <div class="skills">
+          <div class="circle circleHTML">HTML</div>
+          <div class="circle circleCSS">CSS</div>
+          <div class="circle circleJS">JS</div>
+          <div class="circle circleTS">TS</div>
+          <div class="circle circleUXUI">UX/UI</div>
+          <div class="circle circleGit">Git</div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects">
+        <h2 id="projects" class="light-font">Recent <span>Projects</span></h2>
+        <div class="project-section">
+          <!-- Project 1 -->
+          <article class="project">
+            <img
+              class="thumbnail"
+              src="img/project-img1.png"
+              alt="Skyline Architects Thumbnail"
+            />
+            <h3 class="light-font">Skyline Architects</h3>
+            <p class="light-font">
+              This project was developed as part of the HTML & CSS course in the
+              Frontend Developer program.
+            </p>
+            <button class="live-btn">Live Preview</button>
+          </article>
+          <!-- Project 2 -->
+          <article class="project">
+            <img
+              class="thumbnail"
+              src="img/project-img2.png"
+              alt="Expense Tracker Thumbnail"
+            />
+            <h3 class="light-font">Expense Tracker</h3>
+            <p class="light-font">
+              This design was created as part of a group project in the UX/UI
+              Design course in the Frontend Developer program.
+            </p>
+            <button id="disabled-btn" class="live-btn">Live Preview</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="container contact">
+      <div>
+        <h2 id="contact">Say <span>Hello</span></h2>
+        <address>
+          <a class="dark-font" href="mailto:linda.jensen81@me.com"
+            >linda.jensen81@me.com</a
+          >
+        </address>
+        <div class="socials">
+          <a href="https://www.facebook.com/linda.jensen.5872" target="_blank">
+            <img src="img/facebook-icon.png" alt="Facebook" width="30"
+          /></a>
+          <a href="https://www.instagram.com/jensenvbg/" target="_blank">
+            <img src="img/instagram-icon.png" alt="Instagram" width="30"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/linda-jensen-swe/"
+            target="_blank"
+          >
+            <img src="img/linkedin-icon.png" alt="LinkedIn" width="30"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
