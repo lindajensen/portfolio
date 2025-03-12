@@ -252,6 +252,13 @@ header {
   left: 45%;
 }
 
+.circleVue {
+  height: 4.3rem;
+  width: 4.3rem;
+  top: 60%;
+  left: 40%;
+}
+
 .circleTS {
   height: 3.9rem;
   width: 3.9rem;
@@ -267,8 +274,8 @@ header {
 }
 
 .circleGit {
-  height: 3.8rem;
-  width: 3.8rem;
+  height: 4.2rem;
+  width: 4.2rem;
   top: 10%;
   left: 72%;
 }
@@ -302,34 +309,6 @@ header {
   object-fit: cover;
   border-radius: 4px;
 }
-
-/* .project-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.8rem;
-  margin-bottom: 1.2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.project {
-  text-align: center;
-}
-
-.project p {
-  margin-bottom: 1rem;
-}
-
-.thumbnail {
-  margin-top: 0.5rem;
-  margin-bottom: 0.8rem;
-  width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: cover;
-} */
 
 /* Footer */
 address {
@@ -404,7 +383,7 @@ address {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: auto; /* Justera höjden om du vill */
+    height: auto;
     position: relative;
     margin-bottom: 1.8rem;
   }
