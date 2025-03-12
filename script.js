@@ -1,9 +1,10 @@
-const liveBtn = document.querySelector(".live-btn");
+const liveButton = document.querySelector(".live-btn");
+const disabledButtons = document.querySelectorAll(".disabled-btn");
 
-const disabledBtn = document.querySelector("#disabled-btn");
+disabledButtons.forEach((button) => {
+  button.disabled = true;
+});
 
-disabledBtn.disabled = true;
-
-liveBtn.addEventListener("click", () => {
+liveButton.addEventListener("click", () => {
   window.open("https://skylinearchitects.netlify.app/");
 });

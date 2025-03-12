@@ -127,7 +127,7 @@ span {
   background-color: #2f1a5c;
 }
 
-.live-btn {
+.btn {
   background-color: var(--accent-color);
   color: var(--dark-font-color);
   text-decoration: none;
